@@ -1,0 +1,50 @@
+{
+  "name": "pugtodosmodularjslogin",
+  "version": "1.0.0",
+  "description": "login pug todo app that explores module js imports in the testing and the authentication",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha --timeout 10000 -u tdd",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martucazpo/pugTodosModularJSLogin.git"
+  },
+  "keywords": [
+    "pug",
+    "js",
+    "module",
+    "imports",
+    "passport",
+    "passport",
+    "local",
+    "mocha",
+    "chai",
+    "testing",
+    "nodejs"
+  ],
+  "author": "M Pipes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martucazpo/pugTodosModularJSLogin/issues"
+  },
+  "homepage": "https://github.com/martucazpo/pugTodosModularJSLogin#readme",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "chai-http": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^5.0.0",
+    "express": "^4.21.1",
+    "express-session": "^1.18.1",
+    "mongoose": "^8.7.3",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.3"
+  }
+}
