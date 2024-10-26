@@ -1,4 +1,5 @@
 extends layout.pug 
+include mixins/form
 
 block header 
     include partials/header
@@ -7,6 +8,6 @@ block content
     if(!path)
         h3 Home 
     if(path === "/login")
-        h3 Login 
+        include partials/loginForm 
     if(path === "/register")
-        h3 Register
+        include partials/registrationForm

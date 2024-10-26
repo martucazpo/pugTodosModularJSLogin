@@ -1,0 +1,8 @@
+mixin form(action,inputs,btnTxt)
+
+    .form-wrapper 
+        form(action= action method="POST")
+            each inp in inputs 
+                label(for= inp.name) #{inp.name === "password2" ? "Please Re-enter Password: " : /[a-z][A-Z]/.test(inp.name) ? inp.name.split("").map(lett => lett === lett.toUpperCase() ? lett = " " + lett : lett).join("").split(" ").map(word => word.replace(word[0], word[0].toUpperCase())).join(" ") + ": " :inp.name.replace(inp.name[0], inp.name[0].toUpperCase()) + ": "}
+                input(type="text" name= inp.name id= inp.name required)
+            button(type="submit") #{btnTxt}
