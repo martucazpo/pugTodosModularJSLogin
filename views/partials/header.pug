@@ -1,0 +1,8 @@
+header.main-header 
+    nav.main-nav 
+        unless !path
+            a(href="/") HOME 
+        unless path === "/login"
+            a(href="/login") LOGIN 
+        unless path === "/register"
+            a(href="/register") REGISTER

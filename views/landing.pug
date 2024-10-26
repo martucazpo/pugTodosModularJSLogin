@@ -1,0 +1,12 @@
+extends layout.pug 
+
+block header 
+    include partials/header
+
+block content 
+    if(!path)
+        h3 Home 
+    if(path === "/login")
+        h3 Login 
+    if(path === "/register")
+        h3 Register
